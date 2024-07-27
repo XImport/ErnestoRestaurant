@@ -3,7 +3,7 @@
     <NavigationBar />
     
     <section class="mt-12 pt-12">
-      <h1 class="text-center text-2xl font-bold mb-8  font--Menu--Text">What We Do?</h1>
+      <h1 class="text-center text-2xl font-bold mb-8  font--Menu--Text">Was wir tun?</h1>
       <div class="cards-container">
         <div class="card-wrapper" v-for="(card, index) in Cards" :key="index">
           <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
@@ -22,7 +22,7 @@
     </section>
 
     <section class="mt-12 pt-12">
-      <h1 class="text-center text-2xl font-bold mb-8  font--Menu--Text">Restaurant Location</h1>
+      <h1 class="text-center text-2xl font-bold mb-8  font--Menu--Text">Restaurant-Standort</h1>
       <div class="location-image-container">
         <v-img src="../assets/Location.png" height="100%" width="100%" contain></v-img>
      
@@ -49,7 +49,7 @@ export default {
       ingredients: true,
       Cards: [
         {
-          title: "Fast Food",
+          title: "Schnellimbiss",
           image: "https://icon-library.com/images/fast-food-icon/fast-food-icon-19.jpg",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
@@ -59,7 +59,7 @@ export default {
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
         {
-          title: "Drinks",
+          title: "Getränke",
           image: "https://cdn-icons-png.flaticon.com/512/2094/2094538.png",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },

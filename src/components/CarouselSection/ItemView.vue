@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-0" style="max-width: 70%; padding-bottom: 20px">
-    <h1 class="text-center pb-6 font--Menu--Text">Menu</h1>
+    <h1 class="text-center pb-6 font--Menu--Text">Speisekarte</h1>
    
       <h3 class="text-center pb-6 font--Menu--Text2">{{ Title}}</h3>
  

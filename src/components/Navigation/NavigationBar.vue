@@ -1,59 +1,68 @@
 <template>
-  <v-app-bar style="padding: 1%">
-    <v-img
-        :src="require('@/assets/logo.png')"
-        alt="Logo"
-        max-height="150"
-        style="margin-top: 2%;"
-        max-width="250"
-        contain
-      ></v-img>
+  <div>
+  <v-app-bar app>
+    <v-container class="py-0 fill-height">
+      <v-row align="center" justify="space-between">
+        <v-col cols="auto">
+          <v-img
+            :src="require('@/assets/logo.png')"
+            alt="Logo"
+            max-height="60"
+            max-width="150"
+            contain
+          ></v-img>
+        </v-col>
 
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer> 
-    <div v-for="(btn, index) in NavBar" :key="index" class="mr-4">
-      <v-btn :to="btn.path" depressed class="transparent text-h6" tag="router-link">
-    {{ btn.title }}
-  </v-btn>
-    </div>
-    <v-spacer></v-spacer> 
-    <v-spacer></v-spacer>
-    <v-btn depressed color="red" class="mr-12 text-subtitle-1 white--text">
-      <v-icon class="pr-2">mdi-arrow-right-bold</v-icon> Reservation Here
-    </v-btn>
+        <v-col class="d-none d-md-flex">
+          <v-row justify="center">
+            <v-col v-for="(btn, index) in NavBar" :key="index" cols="auto">
+              <v-btn :to="btn.path" text class="text-body-1">
+                {{ btn.title }}
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-col>
+
+        <v-col cols="auto" class="d-none d-md-flex">
+          <v-btn color="red" class="white--text" :class="{'px-2': $vuetify.breakpoint.smAndDown}">
+            <v-icon left>mdi-arrow-right-bold</v-icon>
+            <span class="d-none d-sm-inline">Reservierung hier</span>
+          </v-btn>
+        </v-col>
+
+        <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      </v-row>
+    </v-container>
   </v-app-bar>
+
+  <v-navigation-drawer v-model="drawer" temporary right app class="d-md-none">
+    <v-list>
+      <v-list-item v-for="(btn, index) in NavBar" :key="index" :to="btn.path" link>
+        <v-list-item-title>{{ btn.title }}</v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
+</div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "NavigationBar",
 
   data: () => ({
+    drawer: false,
     NavBar: [
-      {
-        title: "Home",
-        path: "/",
-      },
-      {
-        title: "Menu",
-        path: "/menu",
-      },
-      {
-        title: "About",
-        path: "/about",
-      },
-      {
-        title: "Contact",
-        path: "/contact",
-      },
+      { title: "Startseite", path: "/" },
+      { title: "Speisekarte", path: "/menu" },
+      { title: "Reservierungen", path: "/about" },
+      { title: "Kontakt", path: "/contact" },
     ],
   }),
 };
 </script>
 
-<style>
-.v-sheet.v-toolbar:not(.v-sheet--outlined) {
+<style scoped>
+.v-app-bar {
   box-shadow: none !important;
-  /* box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); */
 }
 </style>

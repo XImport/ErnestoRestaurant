@@ -3,23 +3,15 @@
     <div class="container">
       <div class="text-header">
         <h1 class="text-font1">
-          Experience Gourmet Dining at Ernesto Restaurant
+          Erleben Sie Gourmet-Dining im Ernesto Restaurant
         </h1>
         <h2 class="text-font2">
-          Experience Gourmet Dining at Ernesto Restaurant
+          Erleben Sie Gourmet-Dining im Restaurant Ernesto
         </h2>
-        <v-btn class="mt-6 white--text pl-12 pr-12 pt-6 pb-6" color="red">
-          <v-icon
-          class="pr-2"
-        right
-        dark
-      >
-      mdi-arrow-right
-      </v-icon>
-         
-         
-          Check Out
-        </v-btn>
+        <v-btn class="red white--text pa-4 mt-12">
+              <v-icon class="pr-2">mdi-arrow-right</v-icon>
+              Reservierung HIER
+            </v-btn>
       </div>
       <div class="img-container">
         <v-img
@@ -40,10 +32,6 @@
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-
   methods: {
     scrollToSection() {
       let targetSection = document.getElementById("TargetSection");
@@ -99,5 +87,38 @@ export default {
 
 .v-btn {
   box-shadow: none;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-header {
+    order: 2;
+    padding-top: 20px;
+  }
+
+  .img-container {
+    order: 1;
+    justify-content: center;
+  }
+
+  .text-font1 {
+    font-size: 36px;
+  }
+
+  .text-font2 {
+    font-size: 18px;
+  }
+
+  .v-btn {
+    padding: 12px 24px !important;
+  }
+
+  .bg--image {
+    max-width: 90% !important;
+    max-height: auto !important;
+  }
 }
 </style>

@@ -2,7 +2,7 @@ export default function MenuItems() {
   const data = [
     {
       categorieName: "Pizza",
-      title : 'Classic Italian Pizzas',
+      title : 'Klassische italienische Pizzen',
       items: [
         {
           name: "Margherita",
@@ -93,7 +93,7 @@ export default function MenuItems() {
     },
     {
       categorieName: "Pizza NEAPOLITANISCH",
-      title : 'Authentic Neapolitan Pizzas',
+      title : 'Authentische neapolitanische Pizzen',
       items: [
         {
           name: "Formaggi",
@@ -200,7 +200,7 @@ export default function MenuItems() {
     },
     {
       categorieName: "Pasta & Lasagne",
-      title : 'Delicious Pasta & Lasagne',
+      title : 'Leckere Pasta & Lasagne',
       description:
         "Nudelsorten: Penne | Campanelle | Fusilli | Spaghetti | Linguine | Tagliatelle",
       items: [
@@ -313,7 +313,7 @@ export default function MenuItems() {
     },
     {
       categorieName: "Salat & Dessert",
-      title : 'Fresh Salads & Decadent Desserts',
+      title : 'Frische Salate & köstliche Desserts',
 
       items: [
         {
@@ -372,7 +372,7 @@ export default function MenuItems() {
 
     {
       categorieName: "Getrainke",
-      title : 'Refreshing Beverages',
+      title : 'Erfrischende Getränke',
 
       items: [
         {

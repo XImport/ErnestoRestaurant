@@ -47,19 +47,19 @@ export default {
     profilePic: 'https://lh3.googleusercontent.com/a-/ALV-UjXyElQZoUJLOrblfDBNQb9WFMGgo1QJKmbZ4P-eoWY6HwNwmyPgEg=w36-h36-p-rp-mo-br100',
     name: 'Robin Dittmair',
     rating: 5.00,
-    description: 'one of the best pizzas I have ever eaten in my life. And the dessert with pistachios and Nutella was also brilliant..'
+    description: 'Eine der besten Pizzen, die ich in meinem Leben je gegessen habe. Und das Dessert mit Pistazien und Nutella war auch hervorragend.'
   },
   {
     profilePic: 'https://lh3.googleusercontent.com/a/ACg8ocLLZD4C0loAV_OCDQ_SIhqv0pPLfdjeyaIG4XEdIBQxqqTzTQ=w36-h36-p-rp-mo-br100',
     name: 'Anouk Constantin',
     rating: 5,
-    description: "A very nice waiter, especially towards children and young people Great food with little waiting time (15 minutes) ..."
+    description: "Ein sehr netter Kellner, besonders gegenüber Kindern und Jugendlichen. Großartiges Essen mit kurzer Wartezeit (15 Minuten) ..."
   },
   {
     profilePic: 'https://lh3.googleusercontent.com/a/ACg8ocLNb6xt3fc4KsN-OWV9zt2hp-Y4tZCgmWGGVjfQLeYGhycQrg=w36-h36-p-rp-mo-br100',
     name: 'Fatema Mahmood',
     rating: 4,
-    description: 'Ernesto is a pizzeria that you should definitely visit. The combination of excellent food Keep it up 👏 …'
+    description: 'Ernesto ist eine Pizzeria, die Sie unbedingt besuchen sollten. Die Kombination aus ausgezeichnetem Essen ist unschlagbar. Weiter so 👏 …'
   }
 ]
     }

@@ -2,7 +2,7 @@
 
 <v-container>
 <div>
-    <h1 class="text-center pb-6 font--Menu--Text">Clients Reviews</h1>
+    <h1 class="text-center pb-6 font--Menu--Text">Kundenbewertungen</h1>
     <ClientsReviews />
 </div>
 <div>
