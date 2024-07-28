@@ -1,37 +1,39 @@
 <template>
-    <div>
-      <NavigationBar />
-  
-    
-      <CarouselSection :ShowItem='showItem'  ingredients="ingredients"/>
-    
-      <v-main class="pt-12 mt-12">
+  <div>
+    <NavigationBar />
+    <ModelView />
+
+    <CarouselSection :ShowItem="showItem" ingredients="ingredients" />
+
+    <v-main class="pt-12 mt-12">
       <FooterView />
-      </v-main>
-    </div>
-  </template>
-  
-  <script>
-  import NavigationBar from "../components/Navigation/NavigationBar";
-  import HeaderSection from "../components/Header/HeaderSection";
-  import CarouselSection from "../components/CarouselSection/CarouselSectionView";
-  import BannerSection from "../components/Banner/BannerView"
-  import FooterView from "../components/Footer/FooterView"
-  export default {
-    name: "HomeView",
-    components: {
-      NavigationBar,
-      HeaderSection,
-      CarouselSection,
-      BannerSection,
-      FooterView
-    },
-    data() {
+    </v-main>
+  </div>
+</template>
+
+<script>
+import NavigationBar from "../components/Navigation/NavigationBar";
+
+import CarouselSection from "../components/CarouselSection/CarouselSectionView";
+
+import FooterView from "../components/Footer/FooterView";
+import ModelView from "../components/Model/ModelView";
+
+export default {
+  name: "HomeView",
+  components: {
+    NavigationBar,
+
+    CarouselSection,
+
+    FooterView,
+    ModelView,
+  },
+  data() {
     return {
       showItem: 200,
-      ingredients : true
+      ingredients: true,
     };
-  }
-  };
-  </script>
-  
+  },
+};
+</script>

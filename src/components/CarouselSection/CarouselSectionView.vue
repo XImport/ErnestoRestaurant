@@ -7,7 +7,7 @@
           :class="{
             'text-center': true,
             'text-h6': true,
-            'font-underline': category.categorieName === TargetText
+            'font-underline': category.categorieName === TargetText,
           }"
           color="transparent"
           @click="ChangeTextTarget(category.categorieName, category.title)"
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       TargetText: "Pizza",
-      title: 'Classic Italian Pizzas',
+      title: "Classic Italian Pizzas",
       menu: MenuItems(), // Call the function to get the menu data
     };
   },
@@ -55,8 +55,8 @@ export default {
   computed: {
     shouldUnderline() {
       return this.category.categorieName === this.TargetText;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -90,6 +90,7 @@ export default {
 
 @media (max-width: 960px) {
   .categories-container {
+    margin-top: 10%;
     width: 90%;
     padding-bottom: 30px;
     padding-top: 3%;

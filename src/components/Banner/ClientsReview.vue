@@ -1,5 +1,13 @@
 <template>
-  <v-container style="max-width: 60%; border-radius: 50%">
+  <v-container
+    style="max-width: 60%; border-radius: 50%"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+  >
     <v-row>
       <v-col
         v-for="(review, index) in Reviews"
@@ -38,34 +46,40 @@
 
 <script>
 export default {
-  name: 'ClientReviewCard',
-  data(){
+  name: "ClientReviewCard",
+  data() {
     return {
-      rating : 4.50,
+      rating: 4.5,
       Reviews: [
-  {
-    profilePic: 'https://lh3.googleusercontent.com/a-/ALV-UjXyElQZoUJLOrblfDBNQb9WFMGgo1QJKmbZ4P-eoWY6HwNwmyPgEg=w36-h36-p-rp-mo-br100',
-    name: 'Robin Dittmair',
-    rating: 5.00,
-    description: 'Eine der besten Pizzen, die ich in meinem Leben je gegessen habe. Und das Dessert mit Pistazien und Nutella war auch hervorragend.'
+        {
+          profilePic:
+            "https://lh3.googleusercontent.com/a-/ALV-UjXyElQZoUJLOrblfDBNQb9WFMGgo1QJKmbZ4P-eoWY6HwNwmyPgEg=w36-h36-p-rp-mo-br100",
+          name: "Robin Dittmair",
+          rating: 5.0,
+          description:
+            "Eine der besten Pizzen, die ich in meinem Leben je gegessen habe. Und das Dessert mit Pistazien und Nutella war auch hervorragend.",
+        },
+        {
+          profilePic:
+            "https://lh3.googleusercontent.com/a/ACg8ocLLZD4C0loAV_OCDQ_SIhqv0pPLfdjeyaIG4XEdIBQxqqTzTQ=w36-h36-p-rp-mo-br100",
+          name: "Anouk Constantin",
+          rating: 5,
+          description:
+            "Ein sehr netter Kellner, besonders gegenüber Kindern und Jugendlichen. Großartiges Essen mit kurzer Wartezeit (15 Minuten) ...",
+        },
+        {
+          profilePic:
+            "https://lh3.googleusercontent.com/a/ACg8ocLNb6xt3fc4KsN-OWV9zt2hp-Y4tZCgmWGGVjfQLeYGhycQrg=w36-h36-p-rp-mo-br100",
+          name: "Fatema Mahmood",
+          rating: 4,
+          description:
+            "Ernesto ist eine Pizzeria, die Sie unbedingt besuchen sollten. Die Kombination aus ausgezeichnetem Essen ist unschlagbar. Weiter so 👏 …",
+        },
+      ],
+    };
   },
-  {
-    profilePic: 'https://lh3.googleusercontent.com/a/ACg8ocLLZD4C0loAV_OCDQ_SIhqv0pPLfdjeyaIG4XEdIBQxqqTzTQ=w36-h36-p-rp-mo-br100',
-    name: 'Anouk Constantin',
-    rating: 5,
-    description: "Ein sehr netter Kellner, besonders gegenüber Kindern und Jugendlichen. Großartiges Essen mit kurzer Wartezeit (15 Minuten) ..."
-  },
-  {
-    profilePic: 'https://lh3.googleusercontent.com/a/ACg8ocLNb6xt3fc4KsN-OWV9zt2hp-Y4tZCgmWGGVjfQLeYGhycQrg=w36-h36-p-rp-mo-br100',
-    name: 'Fatema Mahmood',
-    rating: 4,
-    description: 'Ernesto ist eine Pizzeria, die Sie unbedingt besuchen sollten. Die Kombination aus ausgezeichnetem Essen ist unschlagbar. Weiter so 👏 …'
-  }
-]
-    }
-  }
   // Add any necessary component logic here
-}
+};
 </script>
 
 <style scoped>

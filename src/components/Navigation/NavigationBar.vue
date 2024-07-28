@@ -16,9 +16,11 @@
           <v-col class="d-none d-md-flex">
             <v-row justify="center">
               <v-col v-for="(btn, index) in NavBar" :key="index" cols="auto">
-                <v-btn :to="btn.path" text class="text-body-1">
-                  {{ btn.title }}
-                </v-btn>
+                <div>
+                  <v-btn :to="btn.path" text class="text-body-1">
+                    {{ btn.title }}
+                  </v-btn>
+                </div>
               </v-col>
             </v-row>
           </v-col>

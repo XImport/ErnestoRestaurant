@@ -2,18 +2,45 @@
   <div>
     <div class="container">
       <div class="text-header">
-        <h1 class="text-font1">
+        <h1
+          class="text-font1"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Erleben Sie Gourmet-Dining im Ernesto Restaurant
         </h1>
-        <h2 class="text-font2">
+        <h2
+          class="text-font2"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Erleben Sie Gourmet-Dining im Restaurant Ernesto
         </h2>
-        <v-btn class="red white--text pa-4 mt-12" @click="ChangeDialogView()">
+        <v-btn
+          class="red white--text pa-4 mt-12"
+          @click="ChangeDialogView()"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="1000"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <v-icon class="pr-2">mdi-arrow-right</v-icon>
           Reservierung HIER
         </v-btn>
       </div>
-      <div class="img-container">
+      <div
+        class="img-container"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <v-img
           max-height="750"
           max-width="700"

@@ -4,23 +4,53 @@
     <ModelView />
     <div class="container">
       <div class="text-header">
-        <h1 class="text-font1">
+        <h1
+          class="text-font1"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           Überspringen Sie das Warten und sichern Sie sich Ihre Reservierung vor
           den anderen
         </h1>
-        <h2 class="text-font2">
+        <h2
+          class="text-font2"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           Machen Sie sich bereit für ein köstliches Pizza-Erlebnis
         </h2>
         <v-btn
           class="mt-6 white--text pl-12 pr-12 pt-6 pb-6"
           color="red"
           @click="ChangeDialogView()"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
           <v-icon class="pr-2" right dark> mdi-arrow-right </v-icon>
           RESERVIERUNG HIER!!
         </v-btn>
       </div>
-      <div class="img-container">
+      <div
+        class="img-container"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <v-img
           max-height="750"
           max-width="700"
@@ -64,7 +94,16 @@
 
     <v-container class="px-0" fluid>
       <v-row align="center" justify="center" no-gutters>
-        <v-col cols="12" md="6">
+        <v-col
+          cols="12"
+          md="6"
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <div class="text-content pa-4 mm--pos">
             <h1 class="text-center mb-6 font--Menu--Text">
               Erhalten Sie spezielle Angebote und Rabatte für reservierte Gäste
@@ -82,7 +121,15 @@
           </div>
         </v-col>
         <v-col cols="12" md="6">
-          <div class="img-container">
+          <div
+            class="img-container"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
             <v-img
               src="@/assets/callus.png"
               contain
