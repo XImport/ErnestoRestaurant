@@ -152,6 +152,9 @@ import NavigationBar from "../components/Navigation/NavigationBar";
 import FooterView from "../components/Footer/FooterView";
 import ModelView from "../components/Model/ModelView";
 export default {
+  created() {
+    document.title = "Kontakt | Ernesto Restaurante";
+  },
   data() {
     return {
       OpeningTime: [

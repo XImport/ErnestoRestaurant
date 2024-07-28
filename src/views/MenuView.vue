@@ -21,6 +21,9 @@ import ModelView from "../components/Model/ModelView";
 
 export default {
   name: "HomeView",
+  created() {
+    document.title = "Speisekarte | Ernesto Restaurante";
+  },
   components: {
     NavigationBar,
 

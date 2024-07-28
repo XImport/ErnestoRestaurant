@@ -73,6 +73,9 @@ import ModelView from "../components/Model/ModelView";
 
 export default {
   name: "HomeView",
+  created() {
+    document.title = "Reservierungen | Ernesto Restaurante";
+  },
   components: {
     NavigationBar,
     FooterView,
