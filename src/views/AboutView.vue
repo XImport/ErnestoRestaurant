@@ -30,9 +30,9 @@
               <h2 class="text-sm font-semibold mb-2 text-center">
                 {{ card.title }}
               </h2>
-              <p class="text-gray-700 text-center subtext">
+              <!-- <p class="text-gray-700 text-center subtext">
                 {{ card.description }}
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -87,26 +87,18 @@ export default {
           title: "Schnellimbiss",
           image:
             "https://icon-library.com/images/fast-food-icon/fast-food-icon-19.jpg",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         },
         {
           title: "Desserts",
           image: "https://cdn-icons-png.flaticon.com/512/7780/7780470.png",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         },
         {
           title: "Getränke",
           image: "https://cdn-icons-png.flaticon.com/512/2094/2094538.png",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         },
         {
           title: "Meals",
           image: "https://cdn-icons-png.flaticon.com/512/1046/1046874.png",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
         },
       ],
     };
