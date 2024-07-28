@@ -1,19 +1,22 @@
 <template>
   <div>
     <NavigationBar />
-
+    <ModelView />
     <div class="container">
       <div class="text-header">
         <h1 class="text-font1">
-          Überspringen Sie das Warten und sichern Sie sich Ihre Reservierung vor den anderen
+          Überspringen Sie das Warten und sichern Sie sich Ihre Reservierung vor
+          den anderen
         </h1>
         <h2 class="text-font2">
           Machen Sie sich bereit für ein köstliches Pizza-Erlebnis
         </h2>
-        <v-btn class="mt-6 white--text pl-12 pr-12 pt-6 pb-6" color="red">
-          <v-icon class="pr-2" right dark>
-            mdi-arrow-right
-          </v-icon>
+        <v-btn
+          class="mt-6 white--text pl-12 pr-12 pt-6 pb-6"
+          color="red"
+          @click="ChangeDialogView()"
+        >
+          <v-icon class="pr-2" right dark> mdi-arrow-right </v-icon>
           RESERVIERUNG HIER!!
         </v-btn>
       </div>
@@ -31,12 +34,10 @@
         <v-icon>mdi-arrow-down</v-icon>
       </v-btn>
     </div>
-    <div id="OpeningSection">
-
-    </div>
-    <div  class="opening-time-section mt-12 pt-12">
-      <h1 class="text-center mb-6 font--Menu--Text ">Öffnungszeiten</h1>
-      <v-container id="OpeningSection" >
+    <div id="OpeningSection"></div>
+    <div class="opening-time-section mt-12 pt-12">
+      <h1 class="text-center mb-6 font--Menu--Text">Öffnungszeiten</h1>
+      <v-container id="OpeningSection">
         <v-row justify="center">
           <v-col
             v-for="(open, index) in OpeningTime"
@@ -49,7 +50,11 @@
             <v-card class="mx-auto" max-width="300" outlined>
               <v-card-text class="text-center">
                 <h2 class="text-h5 mb-2">{{ open.day }}</h2>
-                <p :class="`text-subtitle-1 ${open.state}--text font-weight-bold`">{{ open.Time }}</p>
+                <p
+                  :class="`text-subtitle-1 ${open.state}--text font-weight-bold`"
+                >
+                  {{ open.Time }}
+                </p>
               </v-card-text>
             </v-card>
           </v-col>
@@ -57,74 +62,66 @@
       </v-container>
     </div>
 
-
-    <v-container class="px-0 " fluid >
-    <v-row align="center" justify="center" no-gutters>
-      <v-col cols="12" md="6">
-        <div class="text-content pa-4 mm--pos">
-          <h1 class="text-center mb-6 font--Menu--Text">Erhalten Sie spezielle Angebote und Rabatte für reservierte Gäste</h1>
-          <h3 class="text-center mb-6 font--Menu--Text">Craving that perfect slice? Click below to reserve your spot now and make tonight a pizza night to remember!</h3>
-          <div class="text-center mt-6">
-            <v-btn class="red white--text pa-4">
-              <v-icon class="pr-2">mdi-arrow-right</v-icon>
-              Buchen Sie jetzt Ihre eigene Reservierung!!
-            </v-btn>
+    <v-container class="px-0" fluid>
+      <v-row align="center" justify="center" no-gutters>
+        <v-col cols="12" md="6">
+          <div class="text-content pa-4 mm--pos">
+            <h1 class="text-center mb-6 font--Menu--Text">
+              Erhalten Sie spezielle Angebote und Rabatte für reservierte Gäste
+            </h1>
+            <h3 class="text-center mb-6 font--Menu--Text">
+              Craving that perfect slice? Click below to reserve your spot now
+              and make tonight a pizza night to remember!
+            </h3>
+            <div class="text-center mt-6">
+              <v-btn class="red white--text pa-4" @click="ChangeDialogView()">
+                <v-icon class="pr-2">mdi-arrow-right</v-icon>
+                Buchen Sie jetzt Ihre eigene Reservierung!!
+              </v-btn>
+            </div>
           </div>
-        </div>
-      </v-col>
-      <v-col cols="12" md="6">
-        <div class="img-container">
-          <v-img
-            src="@/assets/callus.png"
-            contain
-            max-height="500"
-            class="bg--image"
-          />
-        </div>
-      </v-col>
-    </v-row>
-  </v-container>
+        </v-col>
+        <v-col cols="12" md="6">
+          <div class="img-container">
+            <v-img
+              src="@/assets/callus.png"
+              contain
+              max-height="500"
+              class="bg--image"
+            />
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
 
-    <div >
+    <div></div>
 
-
-
-
-
-
-
-     
-
-
-
-    </div>
- 
- 
     <FooterView />
   </div>
 </template>
 
 <script>
 import NavigationBar from "../components/Navigation/NavigationBar";
-import FooterView from "../components/Footer/FooterView"
-
+import FooterView from "../components/Footer/FooterView";
+import ModelView from "../components/Model/ModelView";
 export default {
   data() {
     return {
-   "OpeningTime": [
-    { "day": "Montag", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Dienstag", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Mittwoch", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Donnerstag", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Freitag", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Samstag", "Time": "9:00 AM - 11:00 PM", "state": "green" },
-    { "day": "Sonntag", "Time": "Closed", "state": "red" }
-  ]
+      OpeningTime: [
+        { day: "Montag", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Dienstag", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Mittwoch", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Donnerstag", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Freitag", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Samstag", Time: "9:00 AM - 11:00 PM", state: "green" },
+        { day: "Sonntag", Time: "Closed", state: "red" },
+      ],
     };
   },
   components: {
     NavigationBar,
-    FooterView
+    FooterView,
+    ModelView,
   },
   methods: {
     scrollToSection() {
@@ -133,6 +130,9 @@ export default {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     },
+    ChangeDialogView() {
+      this.$store.commit("ChangeModelState");
+    },
   },
 };
 </script>
@@ -140,8 +140,7 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap");
 
-
-.v-btn{
+.v-btn {
   box-shadow: none !important;
 }
 
@@ -183,12 +182,8 @@ export default {
     margin-top: 10%;
   }
   .mm--pos {
-  margin-left: 0%;
-}
-
-
-
-
+    margin-left: 0%;
+  }
 
   .text-header {
     padding-top: 30px;

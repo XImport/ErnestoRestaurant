@@ -8,10 +8,10 @@
         <h2 class="text-font2">
           Erleben Sie Gourmet-Dining im Restaurant Ernesto
         </h2>
-        <v-btn class="red white--text pa-4 mt-12">
-              <v-icon class="pr-2">mdi-arrow-right</v-icon>
-              Reservierung HIER
-            </v-btn>
+        <v-btn class="red white--text pa-4 mt-12" @click="ChangeDialogView()">
+          <v-icon class="pr-2">mdi-arrow-right</v-icon>
+          Reservierung HIER
+        </v-btn>
       </div>
       <div class="img-container">
         <v-img
@@ -42,6 +42,9 @@ export default {
           behavior: "smooth",
         });
       }
+    },
+    ChangeDialogView() {
+      this.$store.commit("ChangeModelState");
     },
   },
 };

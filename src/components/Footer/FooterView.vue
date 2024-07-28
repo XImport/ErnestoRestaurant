@@ -8,8 +8,14 @@
           <p>Bieberer Straße 24 63065 Offenbach am Main</p>
           <p>Besonderheiten: hausgemachte Pasta, neapolitanische Pizza</p>
           <p>Telefon: 069 65005891</p>
-          <p>Öffnungszeiten <span class="red--text"> Montag - Samstag</span> <span class="red--text">11.00 - 23.00</span></p>
-          <p>Öffnungszeiten <span class="red--text"> Sonntag</span> <span class="red--text">Noon</span></p>
+          <p>
+            Öffnungszeiten <span class="red--text"> Montag - Samstag</span>
+            <span class="red--text">11.00 - 23.00</span>
+          </p>
+          <p>
+            Öffnungszeiten <span class="red--text"> Sonntag</span>
+            <span class="red--text">Noon</span>
+          </p>
         </v-col>
 
         <!-- Quick Links -->
@@ -22,7 +28,7 @@
             <v-list-item to="/menu" class="pa-0">
               <v-list-item-title>Speisekarte</v-list-item-title>
             </v-list-item>
-            <v-list-item to="/reservations" class="pa-0">
+            <v-list-item to="/about" class="pa-0">
               <v-list-item-title>Reservierungen</v-list-item-title>
             </v-list-item>
             <v-list-item to="/contact" class="pa-0">
@@ -56,7 +62,8 @@
       <v-row class="mt-4">
         <v-col cols="12" class="text-center">
           <v-divider class="mb-4"></v-divider>
-          © {{ new Date().getFullYear() }} Unser Restaurant. Alle Rechte vorbehalten.
+          © {{ new Date().getFullYear() }} Unser Restaurant. Alle Rechte
+          vorbehalten.
         </v-col>
       </v-row>
     </v-container>
